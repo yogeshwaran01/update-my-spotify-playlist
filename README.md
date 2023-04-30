@@ -1,6 +1,6 @@
-# update-my-spotify-playlist
+# update-my-Spotify-playlist
 
-Spotify Action is a simple GitHub actions to update Spotify playlist with new songs based on your top artists and recently played tracks.
+This is a simple GitHub actions to update Spotify playlist with new songs based on your top artists and recently played tracks.
 
 ## Setup
 
