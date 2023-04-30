@@ -1,6 +1,6 @@
 # update-my-Spotify-playlist
 
-This is a simple GitHub actions to update Spotify playlist with new songs based on your top artists and recently played tracks.
+This is a simple GitHub actions to update Spotify playlist daily with new tracks based on your top artists and recently played tracks.
 
 ## Setup
 
@@ -14,6 +14,6 @@ This is a simple GitHub actions to update Spotify playlist with new songs based 
 8. Create new playlist in your Spotify Account and copy the playlist id from the url. Paste the playlist id in `.env` file.
 9. Run this Script `get_refresh_token.py` to get refresh token. Follow the instruction in this script. Copy the refresh token into `.env` file.
 10. Run this Script `update.py` for testing.
-11. If you want more tracks or recommend songs based on particular artist, change anything in `update.py`. Commit changes if any. Don't commit `.env` 
+11. If you want more tracks or recommend songs based on particular artist, change anything in `update.py`. Commit changes if any. Don't commit `.env` file
 12. Add all env variable `CLIENT_ID`, `CLIENT_SECRET`, `REDIRECT_URI`, `REFRESH_TOKEN`, `PLAYLIST_ID` in github repository secret. Checkout this [link](https://docs.github.com/en/actions/reference/encrypted-secrets) to add a new repository secret.
 13. By default it updates daily at `2:47 UTC`. You can also change this by changing the cron in `/.github/workflows/main.yml` by using [Cron Generator](https://crontab.guru/).
