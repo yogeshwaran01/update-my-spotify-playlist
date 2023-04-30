@@ -1,3 +1,5 @@
+# Script to get refresh token from Spotify
+
 import base64
 import urllib.parse
 
