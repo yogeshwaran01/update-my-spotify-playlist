@@ -30,7 +30,7 @@ jobs:
       run: |
         python update.py
       env: |
-        CLIENT_ID: ${{ secrets. }}
+        CLIENT_ID: ${{ secrets.CLIENT_ID }}
         CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         REDIRECT_URI: ${{ secrets.REDIRECT_URI }}
         REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
