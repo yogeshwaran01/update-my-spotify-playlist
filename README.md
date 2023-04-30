@@ -1,8 +1,12 @@
 # update-my-Spotify-playlist
 
-This is a simple GitHub actions to update Spotify playlist daily with new tracks based on your configurations.
+Automatically update your Spotify playlist with tracks of your favorite artists and genres using this Python script powered by the Spotify Web API and GitHub Actions.
 
-## Setup
+## Introduction
+
+Update My Spotify Playlist is a Python tool that streamlines your Spotify playlist management by adding your favourite tracks from your favorite artists to your playlist in real-time.
+
+## Usage
 
 1. Fork this repo
 2. Clone your repo in local
@@ -51,5 +55,14 @@ CATEGORY = Mix(
 )
 ```
 
-<center> Thank you </center>
-<center> Made with Music ❤️ Love </center>
+## Contributions
+
+Contributions are Welcome. Feel free to report bugs in issue and fix some bugs by creating pull requests. Comments, Suggestions, Improvements and Enhancements are always welcome.
+
+## Contact
+
+If you have any questions or feedback about this project, feel free to get in touch with me via [mail](yogeshin247@gmail.com)
+
+Thank you;
+
+Made with Music ❤️
