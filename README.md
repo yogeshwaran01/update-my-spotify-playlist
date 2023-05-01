@@ -59,6 +59,10 @@ CATEGORY = Mix(
 
 Contributions are Welcome. Feel free to report bugs in issue and fix some bugs by creating pull requests. Comments, Suggestions, Improvements and Enhancements are always welcome.
 
+## License
+
+Distributed under the MIT license.
+
 ## Contact
 
 If you have any questions or feedback about this project, feel free to get in touch with me via [mail](yogeshin247@gmail.com)
