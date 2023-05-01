@@ -18,3 +18,4 @@ spotify = spotipy.Spotify(auth=access_token)
 uris = CATEGORY._get_tracks(spotify)
 
 spotify.playlist_replace_items(PLAYLIST_ID, uris)
+print("Done")

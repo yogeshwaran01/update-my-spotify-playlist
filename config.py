@@ -19,7 +19,7 @@ CATEGORY = TopMix(time_range=TimeRange.long_term, no_of_tracks_required=30)
 
 # Available categories
 # ---------------------
-# 1) TopArtist(time_range=TimeRange.long_term, no_of_tracks_required=34) 
+# 1) TopArtist(time_range=TimeRange.long_term, no_of_tracks_required=34)
 # 2) TopTracks(time_range=TimeRange.short_term, no_of_tracks_required=22)
 # 3) TopMix()
 # 4) RecentlyPlayed()

@@ -4,6 +4,7 @@ import base64
 import urllib.parse
 
 import requests
+
 from config import CLIENT_ID, CLIENT_SECRET, REDIRECT_URI, SCOPES
 
 authorization_url = f"https://accounts.spotify.com/authorize?client_id={CLIENT_ID}&response_type=code&redirect_uri={REDIRECT_URI}&scope={urllib.parse.quote_plus(SCOPES)}"
