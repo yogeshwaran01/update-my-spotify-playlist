@@ -34,4 +34,4 @@ jobs:
         CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         REDIRECT_URI: ${{ secrets.REDIRECT_URI }}
         REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
-        PLAYLIST_ID: ${{ secrets.PLAYLIST_ID }}        
+       

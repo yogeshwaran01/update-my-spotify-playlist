@@ -1,7 +1,8 @@
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
-from config import *
+from config import PLAYLISTS
+from envs import *
 
 sp = SpotifyOAuth(
     client_id=CLIENT_ID,
@@ -15,7 +16,9 @@ access_token = token["access_token"]
 
 spotify = spotipy.Spotify(auth=access_token)
 
-uris = CATEGORY._get_tracks(spotify)
+for playlist in PLAYLISTS:
 
-spotify.playlist_replace_items(PLAYLIST_ID, uris)
-print("Done")
+    uris = playlist['category']._get_tracks(spotify)
+
+    spotify.playlist_replace_items(playlist['id'], uris)
+    print("Done")

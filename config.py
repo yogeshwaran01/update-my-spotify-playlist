@@ -1,21 +1,58 @@
-import os
-
-import dotenv
-
 from categories import *
 
-dotenv.load_dotenv()
+# Add Your Playlist id and its category
 
-CLIENT_ID = os.getenv("CLIENT_ID")
-CLIENT_SECRET = os.getenv("CLIENT_SECRET")
-REDIRECT_URI = os.getenv("REDIRECT_URI")
-REFRESH_TOKEN = os.getenv("REFRESH_TOKEN")
-SCOPES = "playlist-modify-private playlist-modify-public user-top-read user-read-recently-played"
-PLAYLIST_ID = os.getenv("PLAYLIST_ID")
+PLAYLISTS = [
+    {
+        'id': '2fABBrRXVPr2d6UT4S3f2L',
+        'category': RecentlyPlayed(no_of_tracks_required=30)
+    },
+    {
+        'id': '7rJuai1MjSx0h99zZIK0Je',
+        'category': Mix(
+            [
+                Artist('1mYsTxnqsietFxj1OgoGbG'),
+                Artist('6IHhDsmQhMdqnKIb2sE41H'),
+                Artist('6AiX12wXdXFoGJ2vk8zBjy'),
+                Artist('4zCH9qm4R2DADamUHMCa6O'),
+                Artist('6CtYzQvENTdGq5LPPsePdV')
+            ],
+            no_of_tracks_required=50
+        )
+    },
+    {
+        'id': '6n559itEfTJWdWpQiPZSxE',
+        'category': Mix(
+            [
+                Artist('6M2wZ9GZgrQXHCFfjv46we'),
+                Artist('5Pwc4xIPtQLFEnJriah9YJ'),
+                Artist('1Xyo4u8uXC1ZmMpatF05PJ'),
+                Artist('53XhwfbYqKCa1cC15pYq2q'),
+                Genre('pop')
+            ],
+            no_of_tracks_required=50
+        )
+    },
+    {
+        'id': '5X8TGKcqbaOyeFf2vxg3YJ',
+        'category': TopMix(no_of_tracks_required=30)
+    },
+    {
+        'id': '1xOBtxXq8zR5azITxc7xDj',
+        'category': Mix(
+            [
+                Artist('1mYsTxnqsietFxj1OgoGbG'),
+                Artist('6IHhDsmQhMdqnKIb2sE41H'),
+                Artist('6AiX12wXdXFoGJ2vk8zBjy'),
+                Artist('6M2wZ9GZgrQXHCFfjv46we'),
+                Artist('5Pwc4xIPtQLFEnJriah9YJ'),
+            ], no_of_tracks_required=30
+        )
+    }
 
-# Insert your category here
+    
+]
 
-CATEGORY = TopMix(time_range=TimeRange.long_term, no_of_tracks_required=30)
 
 # Available categories
 # ---------------------
@@ -45,3 +82,32 @@ CATEGORY = TopMix(time_range=TimeRange.long_term, no_of_tracks_required=30)
 #         Track("0HqZX76SFLDz2aW8aiqi7G"),
 #     ]
 # )
+
+
+### Example Config File:
+
+# PLAYLISTS = [
+#     {
+#         'id': '2bx19B2bwgTf20XWQBxlQo',
+#         'category': TopMix(time_range=TimeRange.long_term, no_of_tracks_required=30)
+#     },
+#     {
+#         'id': '2bx19B2bwgTff20XWQBxlQo',
+#         'category': TopArtist(time_range=TimeRange.short_term, no_of_tracks_required=30)
+#     },
+#     {
+#         'id': '7sLWB2thlLWFcvuExsc77y',
+#         'category': Mix(
+#             [
+#                 Artist('7dGJo4pcD2V6oG8kP0tJRR'),
+#                 Artist('1mYsTxnqsietFxj1OgoGbG'),
+#                 Genre('pop')
+#             ],
+#             no_of_tracks_required=20
+#         )
+#     },
+#     {
+#         'id': '23ljfjfwfpwjwjfwjfjfjs',
+#         'category': RecentlyPlayed(no_of_tracks_required=23)
+#     }
+# ]
